@@ -1,0 +1,27 @@
+// 5 5
+// 1 2 N
+// GAGAGAGAA
+// 3 3 E
+// AADAADADDA
+
+{
+	"coinX" : 5,
+	"coinY" : 5,
+	"tondeuse1": [
+		{
+			"x" : 1,
+			"y" : 2,
+			"p" : "N",
+			"code" : "GAGAGAGAA"
+		}
+	],
+
+	"tondeuse2": [
+		{
+			"x" : 3,
+			"y" : 3,
+			"p" : "E",
+			"code" : "AADAADADDA"
+		}	
+	]
+}
