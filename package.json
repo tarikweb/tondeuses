@@ -1,0 +1,26 @@
+{
+  "name": "tondeuses",
+  "version": "1.0.0",
+  "description": "test technique",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tarikweb/tondeuses.git"
+  },
+  "keywords": [
+    "test",
+    "tondeuse"
+  ],
+  "author": "Tarik Abbas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tarikweb/tondeuses/issues"
+  },
+  "homepage": "https://github.com/tarikweb/tondeuses#readme",
+  "dependencies": {
+    "jest": "^24.8.0"
+  }
+}
