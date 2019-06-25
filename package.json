@@ -3,8 +3,35 @@
   "version": "1.0.0",
   "description": "test technique",
   "main": "index.js",
+  "babel": {
+    "presets": [
+      [
+        "env",
+        {
+          "targets": [
+            {
+              "node": "current"
+            }
+          ]
+        }
+      ]
+    ],
+    "plugins": [
+      [
+        "babel-plugin-transform-builtin-extend",
+        {
+          "globals": [
+            "Error"
+          ]
+        }
+      ],
+      [
+        "transform-regenerator"
+      ]
+    ]
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest --no-cache ./*"
   },
   "repository": {
     "type": "git",
@@ -21,6 +48,18 @@
   },
   "homepage": "https://github.com/tarikweb/tondeuses#readme",
   "dependencies": {
-    "jest": "^24.8.0"
+    "babel-eslint": "^10.0.1",
+    "babel-jest": "^21.2.0",
+    "babel-plugin-transform-builtin-extend": "^1.1.2",
+    "babel-preset-env": "^1.7.0",
+    "eslint": "^5.6.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "jest": "^23.6.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "@babel/register": "^7.4.4"
   }
 }
